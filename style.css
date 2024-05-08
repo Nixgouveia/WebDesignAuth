@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #007bff, #ffffff); /* Degradê radial */
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
+
+#register-button {
+    background-color: #28a745;
+    transition: background-color 0.3s ease;
+}
+
+#register-button:hover {
+    background-color: #218838;
+}
+
