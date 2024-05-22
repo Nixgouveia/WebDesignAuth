@@ -1,25 +1,46 @@
+<!-- 
+Trabalho elaborado por: Pedro Gouveia-50125
+Disciplina: PWEB    
+-->
+
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Gestão de Drones</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2>Entrar na Conta</h2>
-        <form id="login-form">
-            <input type="email" id="login-email" placeholder="Email" required>
-            <input type="password" id="login-password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-        </form>
-        <div id="messagPe"></div>
-        <a href="registar.html">Não tenho uma conta. Registar-se...</a>
+        <nav>
+            <button id="manage-parts-btn">Gestão de Peças</button>
+            <button id="manage-assemblies-btn">Gestão de Montagens</button>
+            <button id="view-stats-btn">Visualização de Estatísticas</button>
+        </nav>
+        <section id="manage-parts-section" class="hidden">
+            <h2>Gestão de Peças</h2>
+            <form id="add-part-form">
+                <input type="text" id="part-name" placeholder="Nome da Peça" required>
+                <input type="number" id="part-quantity" placeholder="Quantidade" required>
+                <button type="submit">Adicionar Peça</button>
+            </form>
+            <ul id="parts-list"></ul>
+        </section>
+        <section id="manage-assemblies-section" class="hidden">
+            <h2>Gestão de Montagens</h2>
+            <form id="add-assembly-form">
+                <input type="text" id="assembly-name" placeholder="Nome da Montagem" required>
+                <input type="date" id="assembly-date" required>
+                <button type="submit">Adicionar Montagem</button>
+            </form>
+            <ul id="assemblies-list"></ul>
+        </section>
+        <section id="view-stats-section" class="hidden">
+            <h2>Visualização de Estatísticas</h2>
+            <div id="stats"></div>
+        </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
-
 </body>
-
 </html>
