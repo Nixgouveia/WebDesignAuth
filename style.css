@@ -54,6 +54,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
+
 button:hover {
     background-color: #0056b3;
 }
@@ -73,3 +74,26 @@ button:hover {
     background-color: #218838;
 }
 
+.rodape{
+    bottom:0%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.message {
+    color: red;
+    margin-top: 10px;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: red;
+}
